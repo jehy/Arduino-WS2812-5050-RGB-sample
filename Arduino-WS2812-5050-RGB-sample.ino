@@ -27,6 +27,8 @@ void loop()
       ws2811.setColor(a, b, a);
     else if (i == curr - 1)
       ws2811.setColor(b, a, a);
+    else if (i == curr - 2)
+      ws2811.setColor(a, a, b);
     else
       ws2811.setColor(a, a, a);
     ws2811.send();
